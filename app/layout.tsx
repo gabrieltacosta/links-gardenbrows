@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${roboto.className} antialiased w-full min-h-screen bg-[url('/background_mobile.png')] lg:bg-[url('/background.png')] bg-top bg-cover bg-no-repeat`}
+        className={`${roboto.className} antialiased w-full min-h-screen bg-[url('/background_mobile.png')] lg:bg-[url('/background.png')] bg-center bg-cover bg-no-repeat`}
       >
         {children}
       </body>
