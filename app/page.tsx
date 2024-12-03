@@ -37,8 +37,8 @@ export default function Home() {
               <Image
                 src={youtubeIcon}
                 alt="Icone Youtube"
-                width={16}
-                height={16}
+                width={18}
+                height={18}
               />
               Youtube
             </Button>
