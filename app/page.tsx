@@ -11,10 +11,10 @@ export default function Home() {
     <>
       <div className="flex flex-col w-full min-h-screen relative  bg-black/80">
         <div className="flex flex-1 flex-col w-full items-center px-4 py-16 mb-20 gap-20 ">
-          <div className="shadow-xl shadow-black/50 rounded-3xl overflow-hidden">
+          <div className="shadow-xl shadow-black/50 rounded-3xl overflow-hidden animate-fade-down animate-once animate-duration-[800ms] animate-delay-300">
             <Image src={"/Logo.png"} alt="Logo" width={160} height={160} />
           </div>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 animate-fade-up animate-once animate-duration-[800ms] animate-delay-300">
             <Button href="https://wa.me/5512996343610">
               <Image
                 src={whatsappIcon}
