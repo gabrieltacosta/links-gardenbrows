@@ -8,7 +8,7 @@ import Footer from "./_componentes/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full min-h-screen bg-black/80">
+    <div className="flex flex-col w-full min-h-dvh bg-black/80">
       <div className="flex flex-1 flex-col w-full p-4 items-center justify-center gap-16 mb-10">
         <div className="shadow-xl shadow-black/80 rounded-[30px] animate-fade-down animate-once animate-duration-[1400ms] animate-delay-75">
           <Image src={"/Logo.png"} alt="Logo" width={144} height={144} />
