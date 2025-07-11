@@ -3,7 +3,6 @@ import Button from "./_componentes/Button";
 import whatsappIcon from "@/public/whatsappIcon.svg";
 import instagramIcon from "@/public/instagramIcon.svg";
 import youtubeIcon from "@/public/youtubeIcon.svg";
-import tiktokIcon from "@/public/tiktokIcon.svg";
 import Footer from "./_componentes/Footer";
 
 export default function Home() {
@@ -41,7 +40,6 @@ export default function Home() {
             />
             Youtube
           </Button>
-          
         </div>
       </div>
       <Footer />
