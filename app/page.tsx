@@ -41,10 +41,7 @@ export default function Home() {
             />
             Youtube
           </Button>
-          <Button href="https://tiktok.com/@acarolgarden">
-            <Image src={tiktokIcon} alt="Icone Tiktok" width={14} height={14} />
-            Tiktok
-          </Button>
+          
         </div>
       </div>
       <Footer />
