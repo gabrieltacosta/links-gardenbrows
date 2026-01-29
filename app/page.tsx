@@ -1,9 +1,10 @@
 import Image from "next/image";
-import Button from "./_componentes/Button";
-import whatsappIcon from "@/public/whatsappIcon.svg";
-import instagramIcon from "@/public/instagramIcon.svg";
-import youtubeIcon from "@/public/youtubeIcon.svg";
-import Footer from "./_componentes/Footer";
+import { Button } from "@/components/ui/button";
+// import whatsappIcon from "@/public/whatsappIcon.svg";
+// import instagramIcon from "@/public/instagramIcon.svg";
+// import youtubeIcon from "@/public/youtubeIcon.svg";
+import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -13,7 +14,18 @@ export default function Home() {
           <Image src={"/Logo.png"} alt="Logo" width={144} height={144} />
         </div>
         <div className="flex flex-col gap-8 animate-fade-up animate-once animate-duration-[1400ms] animate-delay-75">
-          <Button href="https://wa.me/5512996343610">
+          <Button asChild className="bg-[#3F4D3B] h-10 rounded-lg shadow-xl shadow-black/80 hover:scale-105 text-white" variant={"link"}>
+            <Link href={"https://pay.kiwify.com.br/FC1R11X"} target="_blank">
+              <Image
+                src={"/e_books-20.webp"}
+                alt="E-book"
+                width={20}
+                height={20}
+              />
+              O Valor Que Comunica
+            </Link>
+          </Button>
+          {/* <Button href="https://wa.me/5512996343610">
             <Image
               src={whatsappIcon}
               alt="Icone Whatsapp"
@@ -39,7 +51,7 @@ export default function Home() {
               height={18}
             />
             Youtube
-          </Button>
+          </Button> */}
         </div>
       </div>
       <Footer />
