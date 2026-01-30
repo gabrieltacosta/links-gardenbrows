@@ -8,18 +8,46 @@ const roboto = Roboto({
   display: "auto",
 });
 
+const siteUrl = "https://links.gardenbrows.com.br";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://links.gardenbrows.com.br"),
+  metadataBase: new URL(siteUrl),
   title: "Studio Garden Brows",
-  description: "Links oficiais do Studio Garden Brows. Acesse o e-book O Valor Que Comunica e fique por dentro das novidades de design de sobrancelhas e cílios.",
+  description:
+    "Links oficiais do Studio Garden Brows. Acesse o e-book O Valor Que Comunica e fique por dentro das novidades de design de sobrancelhas e cílios.",
   openGraph: {
     title: "Studio Garden Brows",
-    description: "Links oficiais do Studio Garden Brows. Acesse o e-book O Valor Que Comunica e fique por dentro das novidades de design de sobrancelhas e cílios",
-    url: `https://links.gardenbrows.com.br`,
+    description:
+      "Links oficiais do Studio Garden Brows. Acesse o e-book O Valor Que Comunica e fique por dentro das novidades de design de sobrancelhas e cílios",
+    url: siteUrl,
     siteName: "Studio Garden Brows",
-    images: [{ url: "https://links.gardenbrows.com.br/Logo.png" }],
+    images: [{ url: `${siteUrl}/Logo.png` }],
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Studio Garden Brows",
+    description:
+      "Links oficiais do Studio Garden Brows. Acesse o e-book O Valor Que Comunica e fique por dentro das novidades de design de sobrancelhas e cílios.",
+    images: [`${siteUrl}/Logo.png`],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+  manifest: `${siteUrl}`,
 };
 
 export default function RootLayout({
