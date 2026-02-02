@@ -19,17 +19,21 @@ export const metadata: Metadata = {
     title: "Studio Garden Brows",
     description:
       "Links oficiais do Studio Garden Brows. Acesse o e-book O Valor Que Comunica e fique por dentro das novidades de design de sobrancelhas e cílios",
+<<<<<<< HEAD
     url: siteUrl,
+=======
+    url: `https://links.gardenbrows.com.br`,
+>>>>>>> 20f8837 (update)
     siteName: "Studio Garden Brows",
     images: [{ url: `${siteUrl}/Logo.png` }],
     type: "website",
     locale: "pt_BR",
-    }
   },
-   twitter: {
+  twitter: {
     card: "summary_large_image",
     title: "Studio Garden Brows",
-    description: "Links oficiais do Studio Garden Brows. Acesse o e-book O Valor Que Comunica e fique por dentro das novidades de design de sobrancelhas e cílios.",
+    description:
+      "Links oficiais do Studio Garden Brows. Acesse o e-book O Valor Que Comunica e fique por dentro das novidades de design de sobrancelhas e cílios.",
     images: [`https://links.gardenbrows.com.br/Logo.png`],
   },
   twitter: {
