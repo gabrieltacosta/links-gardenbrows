@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col w-full min-h-dvh bg-black/80">
       <div className="flex flex-1 flex-col w-full p-4 items-center justify-center gap-16 mb-10">
         <div className="shadow-xl shadow-black/80 rounded-[30px] animate-fade-down animate-once animate-duration-[1400ms] animate-delay-75">
-          <Image src={"/Logo.png"} alt="Logo" width={144} height={144} />
+          <Image src={"/logo-192x192.png"} alt="Logo" width={144} height={144} />
         </div>
         <div className="flex flex-col gap-8 animate-fade-up animate-once animate-duration-[1400ms] animate-delay-75">
           <Button
