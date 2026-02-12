@@ -14,7 +14,11 @@ export default function Home() {
           <Image src={"/Logo.png"} alt="Logo" width={144} height={144} />
         </div>
         <div className="flex flex-col gap-8 animate-fade-up animate-once animate-duration-[1400ms] animate-delay-75">
-          <Button asChild className="bg-[#3F4D3B] h-10 rounded-lg shadow-xl shadow-black/80 hover:scale-105 text-white" variant={"link"}>
+          <Button
+            asChild
+            className="bg-[#3F4D3B] h-10 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
+            variant={"link"}
+          >
             <Link href={"https://pay.kiwify.com.br/FC1R11X"} target="_blank">
               <Image
                 src={"/e_books-20.webp"}
