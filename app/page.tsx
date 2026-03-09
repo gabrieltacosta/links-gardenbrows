@@ -11,7 +11,12 @@ export default function Home() {
     <div className="flex flex-col w-full min-h-dvh bg-black/80">
       <div className="flex flex-1 flex-col w-full p-4 items-center justify-center gap-16 mb-10">
         <div className="shadow-xl shadow-black/80 rounded-[30px] animate-fade-down animate-once animate-duration-[1400ms] animate-delay-75">
-          <Image src={"/logo-192x192.png"} alt="Logo" width={144} height={144} />
+          <Image
+            src={"/logo-192x192.png"}
+            alt="Logo"
+            width={144}
+            height={144}
+          />
         </div>
         <div className="flex flex-col gap-8 animate-fade-up animate-once animate-duration-[1400ms] animate-delay-75">
           <Button
@@ -26,28 +31,49 @@ export default function Home() {
                 width={20}
                 height={20}
               />
-              O Valor Que Comunica
+              <div className="flex flex-col text-center">
+                O Valor Que Comunica
+              </div>
             </Link>
           </Button>
-          {/* <Button href="https://wa.me/5512996343610">
-            <Image
-              src={whatsappIcon}
-              alt="Icone Whatsapp"
-              width={15}
-              height={15}
-            />
-            Whatsapp
+          <Button
+            asChild
+            className="bg-[#3F4D3B] h-10 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
+            variant={"link"}
+          >
+            <Link href="https://pay.kiwify.com.br/GHLBoos" target="_blank">
+              <Image
+                src={"/easel.png"}
+                alt="Icone Whatsapp"
+                width={15}
+                height={15}
+              />
+              <div className="flex flex-col text-center">
+                Portfólio Profissional:
+                <br />
+                Totalmente editável no Canva
+              </div>
+            </Link>
           </Button>
-          <Button href="https://instagram.com/acarolgarden/">
-            <Image
-              src={instagramIcon}
-              alt="Icone Instagram"
-              width={15}
-              height={15}
-            />
-            Instagram
+          <Button
+            asChild
+            className="bg-[#3F4D3B] h-10 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
+            variant={"link"}
+          >
+            <Link href="https://pay.kiwify.com.br/PpsF1pK" target="_blank">
+              <Image
+                src={"/checklist.png"}
+                alt="Icone Instagram"
+                width={15}
+                height={15}
+              />
+              <div className="flex flex-col text-center">
+                Ficha de Avaliação Lash Lifting: <br />
+                Personalizável para seus atendimentos
+              </div>
+            </Link>
           </Button>
-          <Button href="https://www.youtube.com/@acarolgarden">
+          {/*<Button href="https://www.youtube.com/@acarolgarden">
             <Image
               src={youtubeIcon}
               alt="Icone Youtube"
@@ -55,7 +81,7 @@ export default function Home() {
               height={18}
             />
             Youtube
-          </Button> */}
+          </Button>*/}
         </div>
       </div>
       <Footer />
