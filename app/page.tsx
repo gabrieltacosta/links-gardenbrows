@@ -1,8 +1,5 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-// import whatsappIcon from "@/public/whatsappIcon.svg";
-// import instagramIcon from "@/public/instagramIcon.svg";
-// import youtubeIcon from "@/public/youtubeIcon.svg";
 import Footer from "../components/Footer";
 import Link from "next/link";
 
@@ -21,34 +18,34 @@ export default function Home() {
         <div className="flex flex-col gap-8 animate-fade-up animate-once animate-duration-[1400ms] animate-delay-75">
           <Button
             asChild
-            className="bg-[#3F4D3B] h-10 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
+            className="bg-[#3F4D3B] h-10 py-6 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
             variant={"link"}
           >
-            <Link href={"https://pay.kiwify.com.br/FC1R11X"} target="_blank">
+            <Link href={"https://pay.kiwify.com.br/FC1R11X"} target="_blank" className="flex w-full">
               <Image
                 src={"/e_books-20.webp"}
                 alt="E-book"
                 width={20}
                 height={20}
               />
-              <div className="flex flex-col text-center">
+              <div className="flex-1 text-center">
                 O Valor Que Comunica
               </div>
             </Link>
           </Button>
           <Button
             asChild
-            className="bg-[#3F4D3B] h-10 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
+            className="bg-[#3F4D3B] h-10 py-6 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
             variant={"link"}
           >
-            <Link href="https://pay.kiwify.com.br/GHLBoos" target="_blank">
+            <Link href="https://pay.kiwify.com.br/GHLBoos" target="_blank" className="flex w-full">
               <Image
                 src={"/easel.png"}
-                alt="Icone Whatsapp"
-                width={15}
-                height={15}
+                alt="Icone easel"
+                width={20}
+                height={20}
               />
-              <div className="flex flex-col text-center">
+              <div className="flex-1 text-center">
                 Portfólio Profissional:
                 <br />
                 Totalmente editável no Canva
@@ -57,31 +54,22 @@ export default function Home() {
           </Button>
           <Button
             asChild
-            className="bg-[#3F4D3B] h-10 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
+            className="bg-[#3F4D3B] h-10 py-6 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
             variant={"link"}
           >
             <Link href="https://pay.kiwify.com.br/PpsF1pK" target="_blank">
               <Image
                 src={"/checklist.png"}
-                alt="Icone Instagram"
-                width={15}
-                height={15}
+                alt="Icone checklist"
+                width={20}
+                height={20}
               />
-              <div className="flex flex-col text-center">
+              <div className="flex-1 text-center">
                 Ficha de Avaliação Lash Lifting: <br />
                 Personalizável para seus atendimentos
               </div>
             </Link>
           </Button>
-          {/*<Button href="https://www.youtube.com/@acarolgarden">
-            <Image
-              src={youtubeIcon}
-              alt="Icone Youtube"
-              width={18}
-              height={18}
-            />
-            Youtube
-          </Button>*/}
         </div>
       </div>
       <Footer />
