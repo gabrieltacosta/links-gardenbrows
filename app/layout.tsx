@@ -61,6 +61,7 @@ export default function RootLayout({
     <html lang="pt_BR">
       <body
         className={`${roboto.className} antialiased w-full bg-[url('/background_mobile.png')] lg:bg-[url('/background.png')] bg-center bg-cover bg-no-repeat`}
+        cz-shortcut-listen="true"
       >
         {children}
       </body>

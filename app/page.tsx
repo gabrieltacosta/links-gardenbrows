@@ -21,16 +21,18 @@ export default function Home() {
             className="bg-[#3F4D3B] h-10 py-6 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
             variant={"link"}
           >
-            <Link href={"https://pay.kiwify.com.br/FC1R11X"} target="_blank" className="flex w-full">
+            <Link
+              href={"https://pay.kiwify.com.br/FC1R11X"}
+              target="_blank"
+              className="flex w-full"
+            >
               <Image
                 src={"/e_books-20.webp"}
                 alt="E-book"
                 width={20}
                 height={20}
               />
-              <div className="flex-1 text-center">
-                O Valor Que Comunica
-              </div>
+              <div className="flex-1 text-center">O Valor Que Comunica</div>
             </Link>
           </Button>
           <Button
@@ -38,9 +40,13 @@ export default function Home() {
             className="bg-[#3F4D3B] h-10 py-6 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
             variant={"link"}
           >
-            <Link href="https://pay.kiwify.com.br/GHLBoos" target="_blank" className="flex w-full">
+            <Link
+              href="https://pay.kiwify.com.br/GHLBoos"
+              target="_blank"
+              className="flex w-full"
+            >
               <Image
-                src={"/easel.png"}
+                src={"/canva.ico"}
                 alt="Icone easel"
                 width={20}
                 height={20}
@@ -67,6 +73,26 @@ export default function Home() {
               <div className="flex-1 text-center">
                 Ficha de Avaliação Lash Lifting: <br />
                 Personalizável para seus atendimentos
+              </div>
+            </Link>
+          </Button>
+          <Button
+            asChild
+            className="bg-[#3F4D3B] h-10 py-6 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
+            variant={"link"}
+          >
+            <Link
+              href="https://collshp.com/selecaocarolgarden?view=storefront"
+              target="_blank"
+            >
+              <Image
+                src={"/shopee.ico"}
+                alt="Icone shopee"
+                width={20}
+                height={20}
+              />
+              <div className="flex-1 text-center">
+                Seleção Carol Garden
               </div>
             </Link>
           </Button>
