@@ -5,7 +5,7 @@ export default async function sitemap() {
     {
       url: siteUrl,
       lastModified: new Date(),
-      changeFrequency: "month" as const,
+      changeFrequency: "monthly" as const,
       priority: 1,
     },
   ];
