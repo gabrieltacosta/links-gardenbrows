@@ -96,6 +96,26 @@ export default function Home() {
               </div>
             </Link>
           </Button>
+          <Button
+            asChild
+            className="bg-[#3F4D3B] h-10 py-6 rounded-lg shadow-xl shadow-black/80 transition-transform duration-300 ease-in-out hover:-translate-y-1 text-white"
+            variant={"link"}
+          >
+            <Link
+              href="https://gardenbrows.com.br"
+              target="_blank"
+            >
+              <Image
+                src={"/logo-192x192.png"}
+                alt="Icone shopee"
+                width={20}
+                height={20}
+              />
+              <div className="flex-1 text-center">
+                Garden Brows Blog
+              </div>
+            </Link>
+          </Button>
         </div>
       </div>
       <Footer />
