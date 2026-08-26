@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div className="flex flex-col w-full min-h-dvh bg-black/80">
-      <div className="flex flex-1 flex-col w-full p-4 items-center justify-center gap-16 mb-10">
+      <main className="flex flex-1 flex-col w-full p-4 items-center justify-center gap-16 mb-10">
         <div className="shadow-xl shadow-black/80 rounded-[30px] animate-fade-down animate-once animate-duration-[1400ms] animate-delay-75">
           <Image
             src={"/logo-192x192.png"}
@@ -117,7 +117,7 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );
