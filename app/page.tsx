@@ -13,6 +13,7 @@ export default function Home() {
             alt="Logo"
             width={144}
             height={144}
+            loading="eager"
           />
         </div>
         <div className="flex flex-col gap-8 animate-fade-up animate-once animate-duration-[1400ms] animate-delay-75">
